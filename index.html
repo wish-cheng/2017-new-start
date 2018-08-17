@@ -2,8 +2,8 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-	<link rel="stylesheet" href="index.css" type="text/css"/>
-  <title>Document</title>
+	<link rel="stylesheet" href="./css/index.css" type="text/css"/>
+  <title>小黄的哔哩哔哩</title>
  </head>
  <body>
 	<!--一  网页头部-->
@@ -55,6 +55,7 @@
 								<a class="i-link" href="#">
 									<img src="images/head_s.jpg" alt="">
 								</a>
+								<!--个人弹出框-->
 							</li>
 							<li class="u-i">
 								<a class="i-link" href="#">消息</a>
@@ -431,11 +432,6 @@
 							<img src="images/images/banner_r.jpg" alt="">
 						</div>
 					</div>
-				</div>
-				<!--广告-->
-				<div class="banner">
-					<img src="images/banner.png" alt="">
-					<b></b>
 				</div>
 			<!--3.直播-->
 				<div class="b-live clearfix" id="b_live">
@@ -4740,33 +4736,34 @@
 			<!--空元素-->
 			<div style="clear:both;"></div>
 		</div>
-		<!--三  右侧滚动导航-->
-		<div id="index-nav">
-			<ul>
-				<li><a href="#b_live">直播</a></li>
-				<li><a href="#b_cartoon">动画</a></li>
-				<li><a href="#b_comic">番剧</a></li>
-				<li><a href="#b_music">音乐</a></li>
-				<li><a href="#b_dance">舞蹈</a></li>
-				<li><a href="#b_game">游戏</a></li>
-				<li><a href="#b_science">科技</a></li>
-				<li><a href="#b_life">生活</a></li>
-				<li><a href="#b_kichiku">鬼畜</a></li>
-				<li><a href="#b_fashion">时尚</a></li>
-				<li><a href="#b_ad">广告</a></li>
-				<li><a href="#b_entertain">娱乐</a></li>
-				<li><a href="#b_movie">电影</a></li>
-				<li><a href="#b_teleplay">TV剧</a></li>
-				<li class="sort"><a href="#"><i></i>排序</a></li>
-				<li class="linkage"></li>
-				<li class="return-top"><a href="#"><i></i></a></li>
-			</ul>
-			<!--小电视(链接客户端下载页面)-->
-			<div id="clickme">
-				<div></div>
-			</div>
-		</div>
 	</section>
+	<!--三  右侧滚动导航-->
+	<!--三  右侧滚动导航-->
+	<div id="index-nav">
+		<ul>
+			<li><a href="#b_live">直播</a></li>
+			<li><a href="#b_cartoon">动画</a></li>
+			<li><a href="#b_comic">番剧</a></li>
+			<li><a href="#b_music">音乐</a></li>
+			<li><a href="#b_dance">舞蹈</a></li>
+			<li><a href="#b_game">游戏</a></li>
+			<li><a href="#b_science">科技</a></li>
+			<li><a href="#b_life">生活</a></li>
+			<li><a href="#b_kichiku">鬼畜</a></li>
+			<li><a href="#b_fashion">时尚</a></li>
+			<li><a href="#b_ad">广告</a></li>
+			<li><a href="#b_entertain">娱乐</a></li>
+			<li><a href="#b_movie">电影</a></li>
+			<li><a href="#b_teleplay">TV剧</a></li>
+			<li class="sort"><a href="#"><i></i>排序</a></li>
+			<li class="linkage"></li>
+			<li class="return-top"><a href="#"><i></i></a></li>
+		</ul>
+		<!--小电视(链接客户端下载页面)-->
+		<div id="clickme">
+			<div></div>
+		</div>
+	</div>
 	<!--四  网页底部-->
 	<footer id="footer">
 		<div class="footer-wrp">
@@ -4905,22 +4902,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="js/jquery-1.11.3.js"></script>
-	<script src="js/index-slide.js"></script>
-	<script>
-		//小电视
-		$("#clickme>div").mouseover(function(){
-			$("#clickme>div").css({
-				display:"block",
-				background:"images/clickme.png",
-				left:0,  top:0,
-				width:80, height:80
-			}).animate({
-				//backgroundPosition:-80*
-				left:-80
-			},1000);  
-		});
-	</script>
  </body>
- 
+ <script src="js/jquery-1.11.3.js"></script>
+ <script src="js/index-slide.js"></script>
 </html>
